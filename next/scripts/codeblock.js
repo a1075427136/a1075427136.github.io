@@ -1,3 +1,3 @@
-// build time:Mon Jun 08 2020 19:39:03 GMT+0800 (GMT+08:00)
+// build time:Mon Jun 08 2020 20:04:18 GMT+0800 (GMT+08:00)
 var attributes=['autocomplete="off"','autocorrect="off"','autocapitalize="off"','spellcheck="false"','contenteditable="true"'];var attributesStr=attributes.join(" ");hexo.extend.filter.register("after_post_render",function(t){while(/<figure class="highlight ([a-zA-Z]+)">.*?<\/figure>/.test(t.content)){t.content=t.content.replace(/<figure class="highlight ([a-zA-Z]+)">.*?<\/figure>/,function(){var t=RegExp.$1||"plain";var e=RegExp.lastMatch;e=e.replace(/<figure class="highlight /,'<figure class="iseeu highlight /');return'<div class="highlight-wrap"'+attributesStr+'data-rel="'+t.toUpperCase()+'">'+e+"</div>"})}return t});
 //rebuild by neat 
