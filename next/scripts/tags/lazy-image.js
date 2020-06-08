@@ -1,3 +1,0 @@
-// build time:Mon Jun 08 2020 20:04:18 GMT+0800 (GMT+08:00)
-function lazyImage(e){e=e.join(" ").split(",");var t=e[0];var a=e[1]||"";var i=e[2]||"";if(!t){hexo.log.warn("Image src can NOT be empty")}a=a.trim();i=i.trim();var g=['<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/bin1002/images//loading.gif" data-original="'+t+'" class="full-image"'];a.length>0&&g.push('alt="'+a+'"');i.length>0&&g.push('title="'+i+'"');g.push('/><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>');return g.join(" ")}hexo.extend.tag.register("lazyimage",lazyImage);hexo.extend.tag.register("li",lazyImage);
-//rebuild by neat 
