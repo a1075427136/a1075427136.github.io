@@ -1,3 +1,3 @@
-// build time:Mon Jun 08 2020 18:36:28 GMT+0800 (GMT+08:00)
+// build time:Mon Jun 08 2020 19:39:03 GMT+0800 (GMT+08:00)
 function fullImage(e){e=e.join(" ").split(",");var t=e[0];var a=e[1]||"";var i=e[2]||"";if(!t){hexo.log.warn("Image src can NOT be empty")}a=a.trim();i=i.trim();var m=['<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="'+t+'" class="full-image"'];a.length>0&&m.push('alt="'+a+'"');i.length>0&&m.push('title="'+i+'"');m.push('/><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>');return m.join(" ")}hexo.extend.tag.register("fullimage",fullImage);hexo.extend.tag.register("fi",fullImage);
 //rebuild by neat 
